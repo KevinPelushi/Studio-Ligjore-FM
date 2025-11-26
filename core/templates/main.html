@@ -1,0 +1,256 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Ligjore FM</title>
+   <link rel="icon" href="{% static 'images/LAW.png' %}" type="image/png" >
+  <link rel="stylesheet" href="{% static 'main.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="navbar-hamburger" id="hamburger">
+      <i class="fa fa-bars"></i>
+    </div>
+
+    <div class="navbar-logo">
+      <img src="{% static 'images/Logo.png' %}"  alt="logo" class="logo" />
+    </div>
+
+    <div class="navbar-center">
+      <a href="#">KRYEFAQJA</a>
+      <a href="#rreth-nesh">RRETH NESH</a> 
+      <a href="#sherbimet">SHËRBIMET</a>
+      <a href="#kontakt">KONTAKTO</a> 
+    </div> 
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="close-btn" id="closeMenu"><i class="fa fa-times"></i></div>
+    <a href="">Kryefaqja</a>
+    <a href="">Rreth Nesh</a>
+    <a href="">Shërbimet</a>
+    <a href="">Kontakto</a>
+  </div>
+
+  <!-- Header -->
+  <div class="header-section">
+    <img src="{% static 'images/justice4.jpeg' %}" alt="Header image" class="header-image">
+
+    <div class="content">
+      <div class="text-section">
+        <h1>Studio Ligjore FM<br>Drejtësia flet me ne</h1>
+        <p>Mbrojtja juaj ligjore fillon këtu.</p>
+        <a href="#rreth-nesh" class="button">Mëso më shumë rreth nesh →</a>
+      </div>
+      <div class="info-circles">
+        <div class="circle">
+          <span>25+</span>
+          <span>Vite Eksperiencë</span>
+        </div>
+        <div class="circle">
+          <span>947+</span>
+          <span>Cështje</span>
+        </div>
+        <div class="circle">
+          <span>924+</span>
+          <span>Sukses</span>
+        </div>
+        <div class="circle">
+          <span>905+</span>
+          <span>Klientë</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page nr 2(Rreth nesh) -->
+  <div id="rreth-nesh" class="landing-2">
+    <span class="rreth-nesh scroll-left"><b>- Rreth Nesh</b></span>
+
+    <p class="studio-text scroll-left">
+      <b>Mbrojtje <span class="highlight">Profesionale</span> për të <span class="highlight">Drejtën</span>
+        Tuaj.</b><br><br>
+      Me mbi 25 vite përvojë, Studio Ligjore FM është një nga<br>
+      studiot më të besuara në fushën e avokatisë në Shqipëri.<br>
+      E specializuar në çështje penale, civile dhe administrative,<br>
+      studioja ofron këshillim dhe përfaqësim juridik me nivel të lartë,<br>
+      duke vënë në qendër profesionalizmin, integritetin dhe rezultatet.<br>
+      Çdo rast trajtohet me kujdes dhe një qasje të personalizuar,<br>
+      duke garantuar zgjidhje të drejta dhe të besueshme për klientët.<br><br>
+      <span class="highlight">Studio Ligjore FM</span> – sepse të drejtat tuaja kërkojnë përfaqësim të denjë.<br>
+    </p>
+    <br>
+    <a href="#kontakt" class="button2 scroll-bottom">Konsultohu me ne →</a>
+    <!-- Page nr 2(Image carousel) -->
+    <div class="image-center">
+      <div class="carousel-container">
+        <button id="prevBtn" class="arrow-button" aria-label="Previous image">&#10094;</button>
+        <img id="carouselImage" src="{% static 'images/tom-photo.jpeg' %}" alt="Meeting-lawyer" class="center-image fade-in">
+        <button id="nextBtn" class="arrow-button" aria-label="Next image">&#10095;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page nr 3(Sherbimet) -->
+  <div id="sherbimet" class="landing-3">
+    <div class="services-section">
+      <span class="sherbimet"><b>- Shërbimet Ligjore</b></span>
+      <div class="services-grid">
+        <div class="service-box">
+          <img src="https://static.thenounproject.com/png/law-book-icon-2080792-512.png" alt="Corporate Law" />
+          <h3>Administrative</h3>
+          <p>Përfaqësim ligjor në marrëdheniet me administratën shtetërore apo institucionet publike. Kjo përfshin ankimimin e vendimeve administrative, 
+          përfaqesim para organeve administrative dhe gjykatës administrative.</p>
+        </div>
+        <div class="service-box">
+          <img src="https://static.thenounproject.com/png/law-gavel-icon-4946545-512.png" alt="Data Privacy" />
+          <h3>Penale</h3>
+          <p>Përfaqësim ligjor për individë apo subjekte të akuzuara për vepra penale. Kjo përfshin këshillim ligjor, përgatitje të mbrojtes,
+          përfaqësim në prokurori, gjykatë dhe gjatë procedurave hetimore, si dhe mbrojtjen e të drejtave të klientit në cdo fazë të procesit penal.</p>
+        </div>
+        <div class="service-box">
+          <img src="https://static.thenounproject.com/png/justice-scale-icon-5451719-512.png" alt="Litigation" />
+          <h3>Civile</h3>
+          <p>Përfaqësimin e klientëve ne cështje që lidhen me të drejtat dhe detyrimet civile, si p.sh. kontrata, pronësia, familja, trashëgimia,
+            detyrimet dhe dëmshperblimet, hartimin e dokumenteve ligjore, ndërmjetesim, si dhe përfaqësim ne gjykatë apo institucione të tjera.</p>
+        </div>
+        <div class="service-box">
+          <img src="https://cdn-icons-png.flaticon.com/512/10343/10343974.png" alt="Employment Law" />
+          <h3>Punësim</h3>
+          <p>Asistencë ligjore në marrëdhëniet e punës, përfshirë kontratat, mosmarrëveshjet, largimet e padrejta dhe
+            mbrojtjen e të drejtave si punëmarrës apo punëdhënës.</p>
+        </div>
+        <div class="service-box">
+          <img src="https://static.thenounproject.com/png/immigration-law-icon-7456544-512.png" alt="IP Law" />
+          <h3>Emigracioni</h3>
+          <p>Mbështetje ligjore në leje qëndrimi, shtetësi, viza pune dhe çështje të ekspulsit, duke siguruar mbrojtje
+            dhe zgjidhje të shpejtë për çdo situatë. Kujdesemi për një proces të qetë dhe të sigurt ligjërisht.</p>
+        </div>
+        <div class="service-box">
+          <img src="https://static.thenounproject.com/png/real-estate-law-icon-7159806-512.png"
+            alt="International Law" />
+          <h3>Pasuri të paluajtshme</h3>
+          <p>Mbështetje ligjore në blerje, shitje, qira, legalizime dhe ndarje pronash, duke garantuar që çdo
+            transaksion apo proces pronësie të jetë i sigurt dhe i mbrojtur.</p>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+
+  <!-- Quote section with photo background -->
+
+  <div id="kontakt" class="case-section">
+    <div class="case-top">
+      <p class="case-quote scroll-left">
+        "Me përvojë, pasion dhe vendosmëri, ne jemi pranë jush për të mbrojtur të drejtat tuaja dhe
+        për t’ju udhëhequr drejt suksesit."
+      </p>
+      <div class="case-author scroll-bottom">Studio Ligjore FM</div>
+    </div>
+  </div>
+
+
+  <!-- Input form (Konsultohu) -->
+  <div class="case-bottom">
+   <div class="case-form">
+  <h2 class="case-title">Konsultë Falas</h2><br>
+  <p class="case-desc">"Mos e lini problemin ligjor të presë, kontaktoni tani për një konsultë falas dhe nisni
+    rrugën drejt fitores."</p>
+
+  <form method="post" action="{% url 'home' %}">
+    {% csrf_token %}
+    
+    <input type="text" name="name" placeholder="Emri *" class="case-input" required>
+    <input type="text" name="surname" placeholder="Mbiemri *" class="case-input" required>
+    <input type="email" name="email" placeholder="Email" class="case-input" required>
+    <textarea name="comment" placeholder="Mesazhi" class="case-textarea" rows="5" required></textarea>
+    
+    <button type="submit" class="case-btn">Dërgo Mesazh</button>
+  </form>
+</div>
+
+
+    <!-- Info section (Ku ndodhemi) -->
+    <div class="case-trending">
+      <div class="location-section">
+
+        <h2 class="location-title scroll-left">Ku Ndodhemi?</h2>
+
+        <div class="location-info scroll-bottom">
+          <p><strong>📍 Adresa:</strong> Rruga "Fatos Baxhaku"</p>
+          <p><strong>📞 Telefoni:</strong> +355 68 509 7199</p>
+          <p><strong>🕒 Orari i Punës:</strong> E hënë – E shtunë, 08:00 – 16:00</p>
+          <p><strong>🚫 E diel:</strong> Pushim</p>
+
+          <div class="map scroll-bottom">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.4007594441023!2d19.809766777520743!3d41.32189807130831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13503164d814d7c9%3A0xceacf8e89e596074!2sRecro%20Thrift%20Bar!5e0!3m2!1ssq!2s!4v1754097625454!5m2!1ssq!2s"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer-->
+  <footer class="footer">
+    <img src="{% static 'images/Logo.png' %}" alt="" class="logo2" />
+    <div class="footer-container">
+
+      <!-- Menu -->
+      <div class="footer-column">
+        <h3 class="footer-title">Menu</h3>
+        <ul>
+          <li><a href="#rreth-nesh">Rreth nesh</a></li>
+          <li><a href="#sherbimet">Shërbimet</a></li>
+          <li><a href="#kontakt">Kontakto</a></li>
+        </ul>
+      </div>
+
+      <!-- Follow Us -->
+      <div class="footer-column">
+        <h3 class="footer-title">Na ndiqni</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/studio_avokatie__/">Instagram</a></li>
+          <li><a href="https://www.facebook.com/">Facebook</a></li>
+          <li><a
+              href="https://api.whatsapp.com/send?phone=+112067101079&amp;text=Save%20this%20to%20your%20Favorites%20-%20@wilsondesouza">Whatsapp</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact Us -->
+      <div class="footer-column">
+        <h3 class="footer-title">Kontakto</h3>
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>fm.studioavokatie@gmail.com</span>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>+355 68 509 7199</span>
+        </div>
+      </div>
+    </div>
+    <button id="scrollToTop" title="Shko lart">
+      <span class="arrow-up"></span>
+    </button>
+  </footer>
+
+  <script src="{% static 'main.js' %}"></script>
+</body>
+
+</html>
